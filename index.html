@@ -10,7 +10,7 @@
 body{
     background-color: black;
 }
-div{
+div {
     height: 200px;
     width: 200px;
     position: absolute;
@@ -22,7 +22,7 @@ div{
     box-shadow: 0 20px 35px rgba(0,0,0,0.3);
     border-radius: 5px;
     overflow: hidden;
-    background-color: #1c1b29;
+    background: #1c1b29;
 }
 div:before{
     content: "";
@@ -37,13 +37,14 @@ div:before{
     top: -25%;
     animation: rotate 2s infinite linear;
 }
-@keyframes rotate{
-    100%{
+@keyframes rotate {
+    100% {
         transform: rotate(-360deg);
     }
 }
-div:after{
-    content: "AWESOME";
+
+div:after {
+    content: "Hello World";
     height: 94%;
     width: 94%;
     position: absolute;
@@ -57,6 +58,7 @@ div:after{
     font-size: 20px;
     letter-spacing: 6px;
 }
+
     </style>
 </head>
 <body>
